@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content="Pelican" />
+        <title>Suzannah Cooper - Suzannah Cooper</title>
+        <link rel="stylesheet" href="/theme/css/main.css" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="/">Suzannah Cooper</a></h1>
+                <nav><ul>
+                    <li><a href="/category/reflections.html">Reflections</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
+
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="/kiwi-pycon-xiii-and-using-the-momentum-to-start-a-blog.html">Kiwi PyCon XIII and Using the Momentum to Start a Blog</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2024-08-29T10:20:00+10:00">
+                Published: Thu 29 August 2024
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/suzannah-cooper.html">Suzannah Cooper</a>
+        </address>
+<p>In <a href="/category/reflections.html">Reflections</a>.</p>
+
+</footer><!-- /.post-info --><p>I went to <a href="https://kiwipycon.nz/">Kiwi PyCon</a> last week. In the Lightning Talk sessions on Sunday, one of the speakers mentioned how they had created a blog about their particular interest using <a href="https://getpelican.com/">Pelican</a>. I recall that their static website looked beautifully formatted and was impressively handled using Python. I wrote down the name of the framework and something about pandoc and 'can make fancy looking drop caps'.</p>
+<p>As I returned home from Wellington, I had developed a haphazard list of notes stored on my phone about my learnings and thoughts from Kiwi PyCon. I wanted to organise and collate these thoughts into something I could revisit later once I had lost the context of what cryptic single line thoughts I had written down and link back to the videos from the conference once they were available. So here we are: two birds with one stone, using something I learnt from Kiwi PyCon to note down things that I learnt at Kiwi PyCon.</p>
+<h1>An Extract of Notes and Thoughts</h1>
+<h2>Communication</h2>
+<ul>
+<li>Everything (documentation) should be available in one place and if not in one place, should link to each other.</li>
+<li>The word and concept of <a href="https://diataxis.fr/">diátaxis</a></li>
+<li>In the context of public speaking, do not make assumptions about what your audience knows or put in-jokes / old memes into your slides. (I still don't know what <a href="https://www.heb.com/product-detail/elmhurst-naturals-banana-water-original/1978140">banana water</a> has to do with cybersecurity)</li>
+<li>For presentations: focus on what your one point or takeaway should be.</li>
+</ul>
+<h2>Engineering</h2>
+<ul>
+<li>
+<p>Release notes are an easy way to thank and acknowledge the people who have given their time along the way, especially if they did not have to as part of their job or it was in a volunteer or open source capacity</p>
+</li>
+<li>
+<p>An interface is a concept in fiber arts. A definition for an interface is: "A surface forming a common boundary between adjacent regions, bodies, substances, or phases" (<a href="https://www.wordnik.com/words/interface">wordnik</a>). There are numerous other parallels between fiber arts, especially given the context of the first computer programs being inspired by Jaquard looms.</p>
+</li>
+</ul>
+<h3>Testing</h3>
+<ul>
+<li>
+<p>Mocks are like border controls for your code to ensure that you aren't testing anything other than the main purpose of the test.</p>
+</li>
+<li>
+<p>The difference between Fail Safe (default state is unlocked) and Fail Secure (default state is locked), can be disastrous in the context of a <a href="https://www.atsb.gov.au/publications/investigation_reports/2003/rair/rair2003001">runaway train</a>.</p>
+</li>
+<li>
+<p>Adding notes or constructing assertions in a way to allow notes on them can aid in readability rather than having a cryptic failure because 0 = 1 is false.</p>
+</li>
+</ul>
+<h3>Security</h3>
+<ul>
+<li>
+<p><a href="https://www.iana.org/domains/reserved">Reserved domains</a> are those that are set aside and cannot be transferred. One example of this is example.com. Registering other common domains (as per one of the lightning talks) that sound similar but are not actually reserved can yield some mildly horrifying results.</p>
+</li>
+<li>
+<p>The <a href="https://owasp.org/www-project-top-ten/">OWASP Top Ten</a> demonstrates the most critical security risks to web applications. Burp suite and a locally hosted insecure flask application can demonstrate the kinds of chaos that can occur when things are not set up appropriately.</p>
+</li>
+<li>
+<p>There exist ways of <a href="https://www.elttam.com/blog/plormbing-your-django-orm/">exploiting Django ORM</a> to leak data (and is relatively recent research too).</p>
+</li>
+</ul>
+<h2>Python</h2>
+<ul>
+<li>Pythons many uses in addition to web applications, APIs and data analysis also includes <a href="https://micropython.org/">programming</a> <a href="https://www.raspberrypi.com/documentation/microcontrollers/pico-series.html">microcontrollers</a> and writing <a href="https://beeware.org/">native apps</a>. (I wish that I could time travel and teach embedded programming using Python instead)</li>
+<li>The Python 2 to 3 migration gave little incentive for organisations to stick with Python, given it would not be that much harder to change to a different programming language (e.g. possibly backstory for why Javascript is dominant on the web).</li>
+</ul>
+<h3>Language Details</h3>
+<ul>
+<li>Immutable python objects are not actually immutable in the traditional programming language sense. There is a small amount of mutable state used for reference counting. <a href="https://peps.python.org/pep-0683/">Immortal objects</a> are true immutable objects in that they do not have a mutable refcount.</li>
+<li>The removal (or at least non-enforcement) of the Global Interpreter Lock in Python could be a possible split or death of the Python community if it is handled badly, so much so that an exit clause is included in the <a href="https://peps.python.org/pep-0703/">PEP703</a> to allow for it to be rolled back if necessary.</li>
+<li>There also exists a proposal (<a href="https://peps.python.org/pep-0683/">PEP683</a>) to allow a per interpretor Global Interpreter Lock, building upon the benefits of immortal objects.</li>
+</ul>                </article>
+            </aside><!-- /#featured -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>links</h2>
+                        <ul>
+                            <li><a href="https://getpelican.com/">Pelican</a></li>
+                            <li><a href="https://www.python.org/">Python.org</a></li>
+                            <li><a href="https://palletsprojects.com/p/jinja/">Jinja2</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a rel="nofollow" href="https://getpelican.com/">Pelican</a>, which takes great advantage of <a rel="nofollow" href="https://www.python.org/">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a rel="nofollow" href="https://www.smashingmagazine.com/2009/08/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
+</html>
