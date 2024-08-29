@@ -6,7 +6,7 @@ I went to [Kiwi PyCon](https://kiwipycon.nz/) last week. In the Lightning Talk s
 
 As I returned home from Wellington, I had developed a haphazard list of notes stored on my phone about my learnings and thoughts from Kiwi PyCon. I wanted to organise and collate these thoughts into something I could revisit later once I had lost the context of what cryptic single line thoughts I had written down and link back to the videos from the conference once they were available. So here we are: two birds with one stone, using something I learnt from Kiwi PyCon to note down things that I learnt at Kiwi PyCon.
 
-# An Extract of Notes and Thoughts
+# Notes and Thoughts from PyCon
 
 ## Communication
 
