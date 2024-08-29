@@ -22,13 +22,13 @@ LINKS = (
     ("Jinja2", "https://palletsprojects.com/p/jinja/"),
 )
 
-# Social widget
-#SOCIAL = (
-#    ("LinkedIn", "#"),
-#    ("Another social link", "#"),
-#)
-
 DEFAULT_PAGINATION = 10
 
-# Uncomment following line if you want document-relative URLs when developing
-# RELATIVE_URLS = True
+CACHE_CONTENT = True
+LOAD_CONTENT_CACHE = True
+CHECK_MODIFIED_METHOD = "md5"
+GZIP_CACHE = False
+CONTENT_CACHING_LAYER = "generator"
+WITH_FUTURE_DATES = False
+CACHE_PATH = "__cache__"
+OUTPUT_PATH = "__output__"
