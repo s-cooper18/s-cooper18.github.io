@@ -73,3 +73,6 @@ dmypy.json
 
 # Don't uploade the output
 output/
+
+__output__
+__cache__
