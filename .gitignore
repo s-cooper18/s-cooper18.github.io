@@ -71,5 +71,7 @@ dmypy.json
 # pytype static type analyzer
 .pytype/
 
-# Don't uploade the output
+# Don't upload the output
 output/
+__output__/
+__cache__/
